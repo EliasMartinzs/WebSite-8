@@ -28,7 +28,7 @@ const BackCenter = () => {
         onRequestChange={setActiveSlideIndex}
         itemsToShow={1}
         itemsToScroll={1}
-        // autoplay={true}
+        autoplay={true}
         autoplayDirection={'forward'}
         autoplayDelay={3000}
         forwardBtnProps={{
