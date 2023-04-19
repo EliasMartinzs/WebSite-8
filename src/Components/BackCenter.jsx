@@ -28,7 +28,7 @@ const BackCenter = () => {
         onRequestChange={setActiveSlideIndex}
         itemsToShow={1}
         itemsToScroll={1}
-        autoplay={true}
+        // autoplay={true}
         autoplayDirection={'forward'}
         autoplayDelay={3000}
         forwardBtnProps={{
@@ -55,6 +55,9 @@ const BackCenter = () => {
             position: 'relative',
             display: 'inline-block',
             height: '55vh',
+            textAlign: 'center',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           <img
@@ -69,19 +72,18 @@ const BackCenter = () => {
               position: 'absolute',
               textAlign: 'center',
               textTransform: 'uppercase',
-              justifyContent: 'center',
-              textShadow: '12px 9px 11px #000',
               fontWeight: 700,
-              color: 'whitesmoke',
-              display: 'flex',
-              m: { lg: '200px 710px', xs: '120px 50px' },
-              width: { lg: '610px', xs: '280px' },
-              fontSize: { lg: '52px', xs: '32px' },
+              color: '#fff',
+              m: { lg: '150px 1350px', xs: '80px 80px' },
+              fontSize: { lg: '42px', xs: '34px' },
+              textAlign: 'center',
+              width: { lg: '520px', xs: '330px' },
               background: ' rgba(280, 280, 280, 0.6)',
-              borderRadius: '5px',
+              textShadow: '10px 12px 22px #000',
+              border: '2px solid #003',
             }}
           >
-            marque sua a consulta
+            marque a sua consulta
           </Typography>
         </div>
         {/*  */}
@@ -109,11 +111,12 @@ const BackCenter = () => {
               fontWeight: 700,
               color: 'whitesmoke',
               display: 'flex',
-              m: { lg: '200px 710px', xs: '120px 50px' },
+              m: { lg: '200px 1300px', xs: '100px 100px' },
               width: { lg: '610px', xs: '280px' },
-              fontSize: { lg: '38px', xs: '22px' },
+              fontSize: { lg: '38px', xs: '18px' },
               background: ' rgba(280, 280, 280, 0.6)',
               borderRadius: '5px',
+              border: '2px solid #003',
             }}
           >
             ENTENDER A SUA ROTINA PARA PROPOR MUDANÇAS ,<br /> POSSÍVEIS E DE
@@ -146,11 +149,12 @@ const BackCenter = () => {
               fontWeight: 700,
               color: 'whitesmoke',
               display: 'flex',
-              m: { lg: '200px 710px', xs: '120px 50px' },
+              m: { lg: '200px 1300px', xs: '100px 100px' },
               width: { lg: '610px', xs: '280px' },
               fontSize: { lg: '38px', xs: '22px' },
               background: ' rgba(280, 280, 280, 0.6)',
               borderRadius: '5px',
+              border: '2px solid #003',
             }}
           >
             CADA PESSOA E ÚNICA, E CADA DIETA, TAMBÉM
