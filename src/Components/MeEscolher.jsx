@@ -15,7 +15,7 @@ const MeEscolher = () => {
       <Stack
         sx={{
           justifyContent: 'center',
-          p: { lg: '160px 290px', xs: '70px 25px' },
+          p: { lg: '160px 280px', xs: '70px 25px' },
         }}
       >
         <Typography

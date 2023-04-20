@@ -1,51 +1,52 @@
 import React from 'react';
-import { Box, Stack, Card, Typography } from '@mui/material';
+import { Stack, Card, Typography } from '@mui/material';
 
 import COLOR from '../constants/COLOR';
 
 const CardServices = ({ item }) => {
   return (
-    <Box>
-      <Box
+    <Card
+      sx={{
+        bgcolor: 'transparent',
+      }}
+    >
+      <Stack
         sx={{
-          height: '360px',
-          width: { lg: '248px', xs: '270px' },
-          ml: { lg: '1px', xs: '35px' },
-          mr: { lg: '1px', xs: '35px' },
-          gap: '1px',
-          boxShadow: `8px 16px 16px rgba(110,112,115,.7)`,
+          alignItems: 'center',
         }}
       >
-        <Stack sx={{ borderBottom: '1px solid #000' }}>
-          <img src={item.icon} alt="" className="img-card" />
-        </Stack>
-        <Stack
+        <img src={item.icon} alt="" className="img-card" />
+      </Stack>
+      <Stack
+        sx={{
+          alignItems: 'center',
+          p: '90px 60px',
+        }}
+      >
+        <Typography
           sx={{
-            alignItems: 'center',
-            mt: '25px',
+            fontSize: { lg: '30px', xs: '23px' },
+            fontWeight: 700,
+            color: 'black',
+            borderBottom: '1px outset black',
+            p: '9px 0',
+            textAlign: 'center',
           }}
         >
-          <Typography
-            sx={{
-              fontSize: { lg: '25px', xs: '23px' },
-              fontWeight: 700,
-              color: 'whitesmoke',
-            }}
-          >
-            {item.name}
-          </Typography>
-          <Typography
-            sx={{
-              textAlign: 'center',
-              mt: '15px',
-              color: 'whitesmoke',
-            }}
-          >
-            {item.desc}
-          </Typography>
-        </Stack>
-      </Box>
-    </Box>
+          {item.name}
+        </Typography>
+
+        <Typography
+          sx={{
+            color: 'black',
+            mt: '45px',
+            textAlign: 'center',
+          }}
+        >
+          {item.desc}
+        </Typography>
+      </Stack>
+    </Card>
   );
 };
 

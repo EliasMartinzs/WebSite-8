@@ -18,11 +18,7 @@ const BackCenter = () => {
   AOS.init();
 
   return (
-    <Box
-      sx={{
-        height: '55vh',
-      }}
-    >
+    <Box sx={{ height: '70vh' }}>
       <ReactSimplyCarousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
@@ -37,7 +33,7 @@ const BackCenter = () => {
             zIndex: '11',
           },
           children: (
-            <Next sx={{ fontSize: '40px', ml: '-50px', color: '#fff' }} />
+            <Next sx={{ fontSize: '40px', ml: '-50px', color: '#000' }} />
           ),
         }}
         backwardBtnProps={{
@@ -46,120 +42,107 @@ const BackCenter = () => {
             zIndex: '11',
           },
           children: (
-            <Prev sx={{ fontSize: '40px', mr: '-50px', color: '#fff' }} />
+            <Prev sx={{ fontSize: '40px', mr: '-50px', color: '#000' }} />
           ),
         }}
       >
-        <div
+        <Box
           style={{
             position: 'relative',
             display: 'inline-block',
-            height: '55vh',
-            textAlign: 'center',
-            justifyContent: 'center',
-            alignItems: 'center',
+            height: '70vh',
           }}
         >
           <img
             style={{
               backgroundImage: `url(${Backg_1})`,
               position: 'absolute',
-              height: '55vh',
             }}
           />
           <Typography
             sx={{
               position: 'absolute',
-              textAlign: 'center',
               textTransform: 'uppercase',
+              p: { lg: '40px', xs: '30px' },
+              width: { lg: '700px', xs: '300px' },
+              top: { lg: '35%', xs: '32%' },
+              fontSize: { lg: '45px', xs: '36px' },
               fontWeight: 700,
+              textShadow: '4px 10px 8px #000',
               color: '#fff',
-              m: { lg: '150px 1350px', xs: '80px 80px' },
-              fontSize: { lg: '42px', xs: '34px' },
               textAlign: 'center',
-              width: { lg: '520px', xs: '330px' },
-              background: ' rgba(280, 280, 280, 0.6)',
-              textShadow: '10px 12px 22px #000',
-              border: '2px solid #003',
+              background: ' rgba(280, 280, 280, 0.5)',
             }}
           >
             marque a sua consulta
           </Typography>
-        </div>
+        </Box>
         {/*  */}
-        <div
+        <Box
           style={{
             position: 'relative',
             display: 'inline-block',
-            height: '55vh',
+            height: '70vh',
           }}
         >
           <img
             style={{
               backgroundImage: `url(${Backg_2})`,
               position: 'absolute',
-              height: '55vh',
+              height: '70vh',
             }}
           />
           <Typography
             sx={{
               position: 'absolute',
-              textAlign: 'center',
               textTransform: 'uppercase',
-              justifyContent: 'center',
+              p: { lg: '30px', xs: '12px 45px' },
+              width: { lg: '700px', xs: '300px' },
+              top: { lg: '35%', xs: '32%' },
+              fontSize: { lg: '41px', xs: '25px' },
               textShadow: '12px 9px 11px #000',
               fontWeight: 700,
               color: 'whitesmoke',
-              display: 'flex',
-              m: { lg: '200px 1300px', xs: '100px 100px' },
-              width: { lg: '610px', xs: '280px' },
-              fontSize: { lg: '38px', xs: '18px' },
-              background: ' rgba(280, 280, 280, 0.6)',
-              borderRadius: '5px',
-              border: '2px solid #003',
+              background: ' rgba(280, 280, 280, 0.4)',
             }}
           >
             ENTENDER A SUA ROTINA PARA PROPOR MUDANÇAS ,<br /> POSSÍVEIS E DE
             RESULTADO
           </Typography>
-        </div>
+        </Box>
         {/*  */}
 
-        <div
+        <Box
           style={{
             position: 'relative',
             display: 'inline-block',
-            height: '55vh',
+            height: '70vh',
           }}
         >
           <img
             style={{
               backgroundImage: `url(${Backg_3})`,
               position: 'absolute',
-              height: '55vh',
+              height: '70vh',
             }}
           />
           <Typography
             sx={{
               position: 'absolute',
-              textAlign: 'center',
               textTransform: 'uppercase',
-              justifyContent: 'center',
+              p: { lg: '30px', xs: '12px 45px' },
+              width: { lg: '700px', xs: '300px' },
+              top: { lg: '35%', xs: '32%' },
+              fontSize: { lg: '41px', xs: '25px' },
               textShadow: '12px 9px 11px #000',
               fontWeight: 700,
               color: 'whitesmoke',
-              display: 'flex',
-              m: { lg: '200px 1300px', xs: '100px 100px' },
-              width: { lg: '610px', xs: '280px' },
-              fontSize: { lg: '38px', xs: '22px' },
-              background: ' rgba(280, 280, 280, 0.6)',
-              borderRadius: '5px',
-              border: '2px solid #003',
+              background: ' rgba(280, 280, 280, 0.4)',
             }}
           >
             CADA PESSOA E ÚNICA, E CADA DIETA, TAMBÉM
           </Typography>
-        </div>
+        </Box>
       </ReactSimplyCarousel>
     </Box>
   );

@@ -1,8 +1,8 @@
-import Domicilio from '../assets/atendimento.jpg';
-import Funcional from '../assets/funcinal.jpg';
-import Esportiva from '../assets/espotiva.jpg';
-import Online from '../assets/nutricao-online.jpg';
-import Emagrecimento from '../assets/emagrecimento.jpg';
+import Domicilio from '../Icons/home.png';
+import Funcional from '../Icons/funcional.png';
+import Esportiva from '../Icons/gym.png';
+import Online from '../Icons/online.png';
+import Emagrecimento from '../Icons/emagrecimento.png';
 
 export const CardsInfo = [
   {

@@ -7,8 +7,6 @@ import Atendimentos from './Atendimentos';
 import MeEscolher from './MeEscolher';
 import Locals from './Locals';
 
-import WhatsIcon from '../Icons/WhatsIcon.png';
-
 const Home = () => {
   return (
     <Box>
